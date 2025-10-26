@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <table border="0" width="100%" height="100%">
+      <tr bgcolor="#344e41">
+        <td colspan="2" align="center">
+          <br><img src="./1607980111_126.png" alt="fet img" height="50px"width="50px" align="left">
+          <img src="./uos.png" alt="fet img" height="68px"width="68px" align="left">
+          <h1 style="color:white;">REGISTRATION FORM</h1>
+        </td>
+      </tr>
+            <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label > Challan Number:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="text" value="267854874" readonly>This Challan is Valid Up To <b>29-08-2026</b>
+          <!-- this  is for readonly means user inly seee thiss text un editable for if we want that user also right  we use diabled-->
+        </td>
+      </tr>
+      
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="username">Full Name (as per CNIC/B-Form/Marksheet)*:</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="text" id="username" placeholder="Enter name" required minlength="6" maxlength="15">
+        </td>
+      </tr>
+      
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="fathername">Father's Name:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="text" id="fathername" placeholder="Enter Father name" required minlength="6" maxlength="15">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="age">Age:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="number" id="age" value="18" min="18" max="30">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="password">Password:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="password" id="password" placeholder="Password" required maxlength="8">
+        </td>
+      </tr>
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="color">Pick your fav color:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="color" id="color" value="#e10e74">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="cnic">CNIC Number:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="text" id="cnic" placeholder="XXXXX-XXXXXXX-X" required pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" title="CNIC format should be XXXXX-XXXXXXX-X">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="email">Email:*</label></td>
+        <td bgcolor="#dad7cd">
+          <input type="email" id="email" placeholder="abcd123@gmail.com" required>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="countrycode">Phone Number:*</label></td>
+        <td bgcolor="#dad7cd">
+          <select name="countrycode" id="countrycode">
+            <option value="">~~select~~</option>
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+44">+44</option>
+            <option value="+1">+1</option>
+            <option value="+971">+971</option>
+            <option value="+966">+966</option>
+          </select>
+          <input type="tel" id="phone" placeholder="#########" name="countrycode" maxlength="9">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Gender:*</td>
+        <td bgcolor="#dad7cd">
+          <input type="radio" id="male" name="Gender" value="male"><label for="male">Male</label>
+          <input type="radio" id="female" name="Gender" value="female"><label for="female">Female</label>
+          <input type="radio" id="other" name="Gender" value="other"><label for="other">Other</label>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Select Your Courses:*</td>
+        <td bgcolor="#dad7cd">
+          <input type="checkbox" id="math" name="Course" value="mathematics"><label for="math">Mathematics</label>
+          <input type="checkbox" id="ds" name="Course" value="ComputerScience"><label for="ds">Data Science</label>
+          <input type="checkbox" id="web" name="Course" value="webtech"><label for="web">Web Development</label>
+          <input type="checkbox" id="assembly" name="Course" value="Assembly"><label for="assembly">Assembly Language</label>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Select Country:*</td>
+        <td bgcolor="#dad7cd">
+          <select name="country" id="country" required>
+            <option value="">~~Select~~</option>
+            <option value="PK" selected>Pakistan</option>
+            <option value="IN">India</option>
+            <option value="UK">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="AE">United Arab Emirates</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Select Part:*</td>
+        <td bgcolor="#dad7cd">
+          <select name="part" id="part" required>
+            <option value="">~~Select~~</option>
+            <option value="I" selected>BSSW P-I</option>
+            <option value="II">BSSW P-II</option>
+            <option value="III">BSSW P-III</option>
+            <option value="IV">BSSW P-IV</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="dob"></label>Date of Birth:*</td>
+        <td bgcolor="#dad7cd">
+          <input type="datetime-local" id="dob" min="2001-12-30T00:00" max="2025-12-30T23:59" required>
+        </td>
+      </tr>
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;"><label for="hob">Hobbies/Interest</label></td>
+        <td bgcolor="#dad7cd">
+          <input name="hob" list="hob">
+          <datalist id="hob">
+            <option value="Reading">Reading</option>
+            <option value="Coding">Coding</option>
+            <option value="Traveling">Traveling</option>
+            <option value="Drawing">Drawing</option>
+          </datalist>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">How much You Are Satisfied With Us:*</td>
+        <td bgcolor="#dad7cd">
+          <input type="range" id="range" required>
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Highest Qualification:*</td>
+        <td bgcolor="#dad7cd">
+          <img src="./photo.jpg" height="100px" width="100px"><br>
+          <input type="file" id="file" name="myfile">
+        </td>
+      </tr>
+
+      <tr bgcolor="#a3b18a">
+        <td style="color: aliceblue;">Any Inquiry/Issue:*</td>
+        <td bgcolor="#dad7cd">
+          <textarea name="comment" id="inquiry" placeholder="write your comment here...." rows="8" cols="35"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center" bgcolor="#dad7cd">
+          <input type="submit">&nbsp;
+          <input type="reset">&nbsp;
+          <input type="image" src="./5.png" height="50px"width="50px" align="center">&nbsp;
+
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
